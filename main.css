@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* fonte logo */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500&family=Merienda:wght@400;500;600&family=Open+Sans:wght@300&family=Roboto:wght@400;900&display=swap');
+
+/* fonte title */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500&family=Merienda:wght@400;500;600&family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;900&display=swap');
+
+#background-escuro {
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100vw;
+}
+
+.sobre-nos {
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    top: 23%;
+    transform: translate(-50%);
+    background-color: white;
+    box-shadow: 1px .5px 1px rgba(0, 0, 0, 0.353);
+    height: auto;
+    width: 90vw;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.sub-titulo {
+    font: bolder 1.5em 'Roboto', sans-serif;
+    border-bottom: 2px solid black;
+    width: 60vw;
+    max-width: 300px;
+}
+
+.box-quem-somos {
+    align-items: start;
+    gap: 20px;
+}
+
+.justificado {
+    font-weight: 200;
+    text-align: justify;
+    line-height: 1.5em;
+    max-width: 580px;
+}
+
+@media (min-width: 800px) 
+{
+    .sobre-nos {
+        flex-direction: row;
+        padding: 40px 30px;
+        gap: 70px;
+        top: 32%;
+    }
+
+    .img-escritorio {
+        height: 300px;
+        width: 480px;
+    }
+
+    .sub-titulo {
+        font-size: 2.1em;
+    }
+}
+
+.box-doctor {
+    gap: 30px;
+    height: auto;
+    width: 85vw;
+    padding: 20px;
+}
+
+.h3 {
+    font-size: 1.3em;
+}
+
+.img-doctor {
+    height: 300px;
+    width: 200px;
+}
+
+#box-doctor-1 {
+    margin-top: 600px;
+}
+
+.img-escritorio {
+    height: 200px;
+    width: 380px;
+}
+
+@media (min-width: 800px) 
+{
+    #background-escuro {
+        gap: 50px;
+    }
+
+    #box-doctor-1 {
+        margin-top: 450px;
+    }
+
+    .box-doctor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        gap: 50px;
+    }
+
+    .h3 {
+        font-size: 1.6em;
+        max-width: 600px;
+    }
+
+    .img-doctor {
+        height: 400px;
+        width: 300px;
+    }
+}

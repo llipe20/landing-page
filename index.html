@@ -6,17 +6,17 @@
     <link rel="icon" href="imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
     <title>M & T</title>
 </head>
-<body>
+<body style="position: relative;">
+    <!-- BOTÃO FLUTUANTE -->
+    <button type="button" class="botton-flutuante" id="botton-flutuante">
+        <i class="fi fi-brands-whatsapp"></i>
+</button>
     <!-- HEADER -->
     <header id="home"  class="header container">    
-        <!-- BOTÃO FLUTUANTE -->
-        <button type="button" class="botton-flutuante" id="botton-flutuante">
-                <i class="fi fi-brands-whatsapp"></i>
-        </button>
-
         <div class="background-escuro container">
             <nav class="nav container">
 
@@ -37,7 +37,7 @@
             <div class="box-title-header container">
                 <h1 class="h1">Especialistas em direito trabalhista</h1>
 
-                <p class="paragrafo">Foi demitido por justa causa? Nós podemos te ajudar! Estamos prontos para buscar a melhor estratéria para o seu caso.</p>
+                <p class="paragrafo">Foi demitido por justa causa? Nós podemos te ajudar!</p>
 
                 <button type="button" class="botton-whatsapp container">
 
@@ -50,43 +50,49 @@
         </div>
     </header>
 
-    <main class="main">
-        <div class="background-escuro">
+    <main class="main container">
+        <div  id="background-escuro" class="background-escuro container">
 
             <!-- BOX-FLUTUANTE -->
-            <section class="sobre-nos">
-                <img src="" alt="imagem do escritorio" class="img-escritorio">
+            <section class="sobre-nos container">
+                <img src="imagens/escritorio.jpg" alt="imagem do escritorio" class="img-escritorio">
 
-                <h2 class="sub-titulo" id="sobre">Quem somos</h2>
+                <div class="container box-quem-somos">
+                    <h2 class="sub-titulo" id="sobre">Quem somos</h2>
 
-                <p class="paragrafo">
-                    "Somos um renomado escritório de advocacia dedicado exclusivamente a casos de direito trabalhista. Com uma equipe de advogados experientes e comprometidos, estamos aqui para proteger os direitos dos trabalhadores e fornecer representação legal sólida. Compreendemos as complexidades do mundo do trabalho e estamos prontos para oferecer soluções personalizadas para uma ampla gama de questões, desde demissões injustas até disputas salariais e condições de trabalho inadequadas. Nossa paixão pela justiça e nosso profundo conhecimento das leis trabalhistas nos tornam parceiros confiáveis para aqueles que buscam defesa em questões trabalhistas. Seja qual for o desafio, estamos aqui para lutar pelos seus direitos com dedicação e expertise."
-                </p>
+                    <p class="paragrafo justificado" style="color: black;">
+                        Somos um renomado escritório de advocacia dedicado exclusivamente a casos de direito trabalhista. Com uma equipe de advogados experientes e comprometidos, estamos aqui para proteger os direitos dos trabalhadores e fornecer representação legal sólida. Compreendemos as complexidades do mundo do trabalho e estamos prontos para oferecer soluções personalizadas para uma ampla gama de questões, desde demissões injustas até disputas salariais e condições de trabalho inadequadas.
+                    </p>
+                </div>
             </section>
 
             <!-- APRESENTAÇÃO DOS DOTORES -->
-            <section class="box-doctor">
-                <img src="" alt="foto-advogado" class="img-doctor">
+            <section id="box-doctor-1" class="box-doctor container">
+                <img src="imagens/advogada.jpg" alt="foto-advogado" class="img-doctor">
 
-                <h3 class="h3">
-                    Dr. Ana Torres - Especialista em Rescisões Justas:
-                </h3>
+                <div class="container box-quem-somos">
+                    <h3 class="h3 paragrafo">
+                        Dr. Ana Torres - Especialista em Rescisões Justas:
+                    </h3>
 
-                <p class="paragrafo destaque">
-                    Com mais de uma década de experiência em direito trabalhista, a Dra. Ana Torres é uma defensora apaixonada dos direitos dos trabalhadores. Sua abordagem focada e sua habilidade em decifrar os detalhes legais complexos a tornam uma escolha confiável para questões relacionadas a rescisões e demissões injustas. Ela está comprometida em garantir que os funcionários recebam a compensação e os benefícios que merecem, dedicando-se incansavelmente a cada caso para buscar a justiça que seus clientes merecem.
-                </p>
+                    <p class="paragrafo justificado">
+                        Com mais de uma década de experiência em direito trabalhista, a Dra. Ana Torres é uma defensora apaixonada dos direitos dos trabalhadores. Sua abordagem focada e sua habilidade em decifrar os detalhes legais complexos a tornam uma escolha confiável para questões relacionadas a rescisões e demissões injustas. Ela está comprometida em garantir que os funcionários recebam a compensação e os benefícios que merecem, dedicando-se incansavelmente a cada caso para buscar a justiça que seus clientes merecem.
+                    </p>
+                </div>
             </section>
 
-            <section class="box-doctor">
-                <img src="" alt="foto-advogado" class="img-doctor">
+            <section class="box-doctor container">
+                <img src="imagens/advogado.jpg" alt="foto-advogado" class="img-doctor">
 
-                <h3 class="h3">
-                    Dr. Rafael Mendes - Mediador de Conflitos Trabalhistas:
-                </h3>
+                <div class="container box-quem-somos">
+                     <h3 class="h3 paragrafo">
+                        Dr. Rafael Mendes - Mediador de Conflitos Trabalhistas:
+                    </h3>
 
-                <p class="paragrafo destaque">
-                    Reconhecido por sua abordagem calma e sua habilidade em encontrar soluções, o Dr. Rafael Mendes é um mediador experiente em questões trabalhistas. Com um histórico impressionante de resolução bem-sucedida de disputas entre empregados e empregadores, ele se tornou um nome confiável na busca por acordos equitativos. Sua capacidade de ouvir todas as partes envolvidas e propor soluções práticas o torna um mediador eficaz, ajudando a evitar litígios prolongados e custosos.
-                </p>
+                    <p class="paragrafo justificado">
+                        Reconhecido por sua abordagem calma e sua habilidade em encontrar soluções, o Dr. Rafael Mendes é um mediador experiente em questões trabalhistas. Com um histórico impressionante de resolução bem-sucedida de disputas entre empregados e empregadores, ele se tornou um nome confiável na busca por acordos equitativos. Sua capacidade de ouvir todas as partes envolvidas e propor soluções práticas o torna um mediador eficaz, ajudando a evitar litígios prolongados e custosos.
+                    </p>
+                </div>
             </section>
         </div>
     </main>

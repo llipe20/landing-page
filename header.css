@@ -31,7 +31,7 @@ body, html::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 89vh;
     width: 100vw;
     overflow-x: none;
 }
@@ -44,7 +44,6 @@ body, html::-webkit-scrollbar {
 }
 
 .header {
-    position: relative;
     background: url(imagens/background.jpg);
 }
 
@@ -137,7 +136,7 @@ body, html::-webkit-scrollbar {
 
 .h1, .h2, .paragrafo {
     font: bold 2.1em Arial, sans-serif;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.582);
+    text-shadow: 1px .5px 1px rgba(0, 0, 0, 0.41);
     text-align: start;
     color: white;
 }
@@ -153,32 +152,11 @@ body, html::-webkit-scrollbar {
 
 .paragrafo {
     font-weight: normal;
-    font-size: 1.1em;
+    font-size: 1em;
+    text-shadow: none;
 }
 
-@media (min-width: 800px)   /* DESKTOP */
-{
-    .h1 {
-        font-size: 3em;
-    }
 
-    .h2  {
-        font-size: 1.6em;
-    }
-
-    .paragrafo {
-        font-size: 1.4em;
-    }
-
-    .link-nav {
-        font-size: 1.4em;
-        cursor: pointer;
-    }
-}                       /* DESKTOP */
-
-.fi {
-    font-size: 1.5em;
-}
 
 .botton-whatsapp, .botton-flutuante {
     flex-direction: row;
@@ -197,7 +175,8 @@ body, html::-webkit-scrollbar {
 }
 
 .botton-flutuante {
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     padding: 0;
     height: 60px;
     width: 60px;
@@ -206,7 +185,35 @@ body, html::-webkit-scrollbar {
     top: 85%;
 }
 
-.botton-whatsapp:hover, .botton-flutuante:hover {
-    transform: scale(1);
-}
+@media (min-width: 800px)   /* DESKTOP */
+{
+    .h1 {
+        font-size: 3em;
+    }
 
+    .h2  {
+        font-size: 1.6em;
+    }
+
+    .paragrafo {
+        font-size: 1.3em;
+    }
+
+    .link-nav {
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+
+    .botton-whatsapp:hover, .botton-flutuante:hover {
+        transform: scale(1);
+    }
+
+    .botton-flutuante {
+        left: 93%;
+        top: 85%;
+    }
+}                       /* DESKTOP */
+
+.fi {
+    font-size: 1.5em;
+}
