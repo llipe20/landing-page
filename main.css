@@ -11,13 +11,14 @@
     justify-content: center;
     gap: 30px;
     width: 100vw;
+    padding-bottom: 30px;
 }
 
 .sobre-nos {
     gap: 30px;
     position: absolute;
     left: 50%;
-    top: 23%;
+    top: 600px;
     transform: translate(-50%);
     background-color: white;
     box-shadow: 1px .5px 1px rgba(0, 0, 0, 0.353);
@@ -28,7 +29,7 @@
 }
 
 .sub-titulo {
-    font: bolder 1.5em 'Roboto', sans-serif;
+    font: bolder 1.4em 'Roboto', sans-serif;
     border-bottom: 2px solid black;
     width: 60vw;
     max-width: 300px;
@@ -40,9 +41,10 @@
 }
 
 .justificado {
-    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.6em;
     max-width: 580px;
 }
 
@@ -52,7 +54,7 @@
         flex-direction: row;
         padding: 40px 30px;
         gap: 70px;
-        top: 32%;
+        top: 650px;
     }
 
     .img-escritorio {
@@ -78,7 +80,7 @@
 
 .img-doctor {
     height: 300px;
-    width: 200px;
+    width: 220px;
 }
 
 #box-doctor-1 {
@@ -87,7 +89,7 @@
 
 .img-escritorio {
     height: 200px;
-    width: 380px;
+    width: 350px;
 }
 
 @media (min-width: 800px) 
@@ -118,4 +120,26 @@
         height: 400px;
         width: 300px;
     }
+}
+
+/* ESPECIALIDADES */ 
+
+.especialidade {
+    height: auto;
+    width: 90vw;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.box-especial, .especial {
+    height: auto;
+    padding: 10px;
+    width: 90vw;
+    gap: 30px;
+}
+
+.especial {
+    padding: 0;
+    gap: 10px;
+    width: 80vw;
 }
