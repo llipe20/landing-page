@@ -58,12 +58,12 @@
     }
 
     .img-escritorio {
-        height: 300px;
-        width: 480px;
+        height: 350px;
+        width: 520px;
     }
 
     .sub-titulo {
-        font-size: 2.1em;
+        font-size: 2em;
     }
 }
 
@@ -99,7 +99,7 @@
     }
 
     #box-doctor-1 {
-        margin-top: 450px;
+        margin-top: 420px;
     }
 
     .box-doctor {
@@ -112,7 +112,7 @@
     }
 
     .h3 {
-        font-size: 1.6em;
+        font-size: 1.5em;
         max-width: 600px;
     }
 
@@ -125,6 +125,7 @@
 /* ESPECIALIDADES */ 
 
 .especialidade {
+    align-items: start;
     height: auto;
     width: 90vw;
     padding: 40px 20px;
@@ -142,4 +143,30 @@
     padding: 0;
     gap: 10px;
     width: 80vw;
+}
+
+@media(min-width: 800px)
+{
+    h2#especialide {
+        margin-left: 100px
+    }
+
+    .especialidade {
+        align-items: start;
+        margin-top: 10px;
+        gap: 50px;
+    }
+
+    .box-especial {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px 30px;
+    }
+
+    .especial {
+        padding: 20px;
+        border: 2px solid rgba(0, 0, 0, 0.292);
+        border-radius: 10px;
+        width: 35vw;
+    }
 }
