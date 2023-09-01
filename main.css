@@ -11,7 +11,7 @@
     justify-content: center;
     gap: 30px;
     width: 100vw;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .sobre-nos {
@@ -41,11 +41,10 @@
 }
 
 .justificado {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-align: justify;
     line-height: 1.6em;
-    max-width: 580px;
+    max-width: 550px;
 }
 
 @media (min-width: 800px) 
@@ -55,11 +54,6 @@
         padding: 40px 30px;
         gap: 70px;
         top: 670px;
-    }
-
-    .img-escritorio {
-        height: 350px;
-        width: 520px;
     }
 
     .sub-titulo {
@@ -113,19 +107,18 @@
 
     .h3 {
         font-size: 1.5em;
-        max-width: 600px;
+        max-width: 580px;
     }
 
     .img-doctor {
-        height: 400px;
-        width: 300px;
+        height: 320px;
+        width: 220px;
     }
 }
 
 /* ESPECIALIDADES */ 
 
 .especialidade {
-    align-items: start;
     height: auto;
     width: 90vw;
     padding: 40px 20px;
@@ -149,12 +142,8 @@
 
 @media(min-width: 800px)
 {
-    h2#especialide {
-        margin-left: 100px
-    }
 
     .especialidade {
-        align-items: start;
         margin-top: 10px;
         gap: 50px;
     }
@@ -199,10 +188,16 @@ h2#contato {
     text-align: center;
 }
 
+.credito {
+    width: 80vw;
+    padding: 30px 30px 0px 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.204);
+}
+
 .mapa {
     background-color: green;
     height: 400px;
-    width: 400px;
+    width: 300px;
 }
 
 @media  (min-width: 800px)
@@ -222,11 +217,5 @@ h2#contato {
         justify-content: flex-start;
         height: 400px;
         width: 40vw;
-    }
-
-    .credito {
-        width: 80vw;
-        padding: 30px;
-        border-top: 2px solid rgba(255, 255, 255, 0.204);
     }
 }
