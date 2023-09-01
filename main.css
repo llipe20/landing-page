@@ -54,7 +54,7 @@
         flex-direction: row;
         padding: 40px 30px;
         gap: 70px;
-        top: 650px;
+        top: 670px;
     }
 
     .img-escritorio {
@@ -140,7 +140,9 @@
 }
 
 .especial {
-    padding: 0;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
     gap: 10px;
     width: 80vw;
 }
@@ -164,9 +166,67 @@
     }
 
     .especial {
-        padding: 20px;
-        border: 2px solid rgba(0, 0, 0, 0.292);
-        border-radius: 10px;
         width: 35vw;
+    }
+}
+
+/* FOOTER */ 
+
+.footer {
+    background-color: rgb(0, 0, 54);
+    gap: 30px;
+    width: 100vw;
+    height: auto;
+    padding: 40px;
+}
+
+.box-contato, .fone {
+    gap: 30px;
+    height: auto;
+    width: 100vw;
+}
+
+.fone {
+    gap: 10px;
+}
+
+.contato {
+    gap: 20px;
+}
+
+h2#contato {
+    border: none;
+    text-align: center;
+}
+
+.mapa {
+    background-color: green;
+    height: 400px;
+    width: 400px;
+}
+
+@media  (min-width: 800px)
+{
+    .footer {
+        gap: 50px;
+    }
+
+    .box-contato {
+        justify-content: space-evenly;
+        gap: 0;
+        width: 100vw;
+        flex-direction: row;
+    }
+
+    .contato {
+        justify-content: flex-start;
+        height: 400px;
+        width: 40vw;
+    }
+
+    .credito {
+        width: 80vw;
+        padding: 30px;
+        border-top: 2px solid rgba(255, 255, 255, 0.204);
     }
 }
