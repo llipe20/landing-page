@@ -43,7 +43,7 @@
 
 .box-quem-somos {
     align-items: start;
-    gap: 20px;
+    gap: 30px;
 }
 
 .justificado {
@@ -88,7 +88,12 @@
 }
 
 #box-doctor-1 {
-    margin-top: 770px;
+    margin-top: 680px;
+}
+
+.icon{
+    color: #444853;
+    font-size: 2.5em;
 }
 
 .img-escritorio {
@@ -125,6 +130,11 @@
     .img-doctor {
         height: 320px;
         width: 220px;
+    }
+
+    .img-escritorio {
+        height: 350px;
+        width: 510px;
     }
 }
 
@@ -164,11 +174,12 @@
     .box-especial {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 30px 30px;
+        gap: 60px 60px;
     }
 
     .especial {
-        width: 35vw;
+        padding: 30px;
+        width: 30vw;
     }
 }
 
