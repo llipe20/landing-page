@@ -47,7 +47,7 @@ body, html::-webkit-scrollbar {
 }
 
 .header {
-    background: url(imagens/background.jpg), left center;
+    background: url(../imagens/background.jpg), left center;
 }
 
 .background-escuro {
@@ -71,8 +71,20 @@ body, html::-webkit-scrollbar {
     top: 0;    
 }
 
-.box-hambuguer {
-    display:  none;
+.box-hamburguer {
+    display: flex;
+    background-color: rgb(0, 0, 34);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin-top: 170px;
+    padding: 25px;
+    gap: 25px;
+    height: auto;
+    width: 50vw;
+}
+
+.box-hamburguer > a {
+   font-size: 1.2em;
 }
 
 .material-symbols-outlined {
@@ -97,11 +109,20 @@ body, html::-webkit-scrollbar {
         min-height: 100vh;
     }
 
-    .box-hambuguer {
+    .box-hamburguer {
         display: flex;
+        background-color: transparent;
+        box-shadow: none;
+        margin-top:  0px;
+        padding: 0;
+        width: auto;
         flex-direction: row;
         gap: 30px;
     }
+
+    .box-hamburguer > a {
+        font-size: 1.4em;
+     }
 
     .material-symbols-outlined {
         display: none;
