@@ -204,9 +204,12 @@
 }
 
 .contato {
-    gap: 20px;
+    gap: 40px;
 }
 
+#contato {
+    gap: 15px;
+}
 h2#contato {
     border: none;
     text-align: center;
@@ -224,6 +227,18 @@ h2#contato {
     width: 300px;
 }
 
+.agendar {
+    width: 80vw;
+    gap: 20px;
+}
+
+#agendar {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.204);
+    width: 60vw;
+    height: 70px;
+}
+
 @media  (min-width: 800px)
 {
     .footer {
@@ -238,8 +253,25 @@ h2#contato {
     }
 
     .contato {
-        justify-content: flex-start;
+        justify-content: space-evenly;
         height: 400px;
         width: 40vw;
     }
+
+    #contato, .agendar {
+        width: 40vw;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .agendar {
+        gap: 30px;
+    }
+
+    #agendar {
+        font-size: 1.3em;
+        width: 30vw;
+        height: 80px;
+    }
 }
+

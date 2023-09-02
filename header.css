@@ -211,6 +211,12 @@ body, html::-webkit-scrollbar {
         cursor: pointer;
     }
 
+    .botton-whatsapp {
+        width: 35vw;
+        height: 75px;
+        font-size: 1.2em;
+    }
+
     .botton-whatsapp:hover, .botton-flutuante:hover {
         transform: scale(1);
     }
