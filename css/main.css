@@ -235,7 +235,7 @@ h2#contato {
 #agendar {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.204);
-    width: 60vw;
+    width: 70vw;
     height: 70px;
 }
 
@@ -275,3 +275,6 @@ h2#contato {
     }
 }
 
+.credito {
+    gap: 10px;
+}
