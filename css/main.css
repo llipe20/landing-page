@@ -221,10 +221,10 @@ h2#contato {
     border-top: 2px solid rgba(255, 255, 255, 0.204);
 }
 
-.mapa {
+.mapa, .img-mapa {
     background-color: green;
     height: 400px;
-    width: 300px;
+    width: 400px;
 }
 
 .agendar {
